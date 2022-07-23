@@ -22,14 +22,13 @@ class Ejercicio {
         return this.rm * (this.porcentaje / 100)
     }
 }
-
 const ejercicios = [];
+
 
 
 let rmSnatch = parseFloat(prompt('Ingresar RM de Snatch'));
 let porcentajeSnatch = parseFloat(prompt('Ingresar porcentaje'));
 const ejercicio1 = new Ejercicio('Snatch', rmSnatch, porcentajeSnatch);
-console.log(ejercicio1);
 let resultado1 = ejercicio1.peso();
 alert('El peso que debes poner en la barra son ' + resultado1 + ' kilos.');
 if (resultado1 > 99) {
@@ -37,13 +36,13 @@ if (resultado1 > 99) {
 } else {
     alert('Exitos en tu entrenamiento!')
 }
+console.log(ejercicio1);
 
 
 
 let rmClean = parseFloat(prompt('Ingresar RM de Clean'));
 let porcentajeClean = parseFloat(prompt('Ingresar porcentaje'));
 const ejercicio2 = new Ejercicio('Clean', rmClean, porcentajeClean);
-console.log(ejercicio2);
 let resultado2 = ejercicio2.peso();
 alert('El peso que debes poner en la barra son ' + resultado2 + ' kilos.');
 if (resultado2 > 99) {
@@ -51,13 +50,13 @@ if (resultado2 > 99) {
 } else {
     alert('Exitos en tu entrenamiento!')
 }
+console.log(ejercicio2);
 
 
 
-let rmJerk = parseFloat(prompt('Ingresar RM Jerk'));
+let rmJerk = parseFloat(prompt('Ingresar RM de Jerk'));
 let porcentajeJerk = parseFloat(prompt('Ingresar porcentaje'));
 const ejercicio3 = new Ejercicio('Jerk', rmJerk, porcentajeJerk);
-console.log(ejercicio3);
 let resultado3 = ejercicio3.peso();
 alert('El peso que debes poner en la barra son ' + resultado3 + ' kilos.');
 if (resultado3 > 99) {
@@ -65,12 +64,14 @@ if (resultado3 > 99) {
 } else {
     alert('Exitos en tu entrenamiento!')
 }
+console.log(ejercicio3);
+
 
 
 let rmBack = parseFloat(prompt('Ingresar RM de Back'));
 let porcentajeBack = parseFloat(prompt('Ingresar porcentaje'));
 const ejercicio4 = new Ejercicio('Back', rmBack, porcentajeBack);
-console.log(ejercicio4);
+
 let resultado4 = ejercicio4.peso();
 alert('El peso que debes poner en la barra son ' + resultado4 + ' kilos.');
 if (resultado4 > 99) {
@@ -78,6 +79,7 @@ if (resultado4 > 99) {
 } else {
     alert('Exitos en tu entrenamiento!')
 }
+console.log(ejercicio4);
 
 
 ejercicios.push(ejercicio1);
